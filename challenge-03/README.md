@@ -48,7 +48,7 @@ valor dessa propriedade a quantidade passada por parâmetro;
 booleano que representa "verdadeiro";
 */
 pessoa.andar = function(x) { 
-  return pessoa.caminhouQuantosMetros += x; 
+  pessoa.caminhouQuantosMetros += x; 
   pessoa.andando = true; 
 };
 
@@ -97,29 +97,25 @@ Agora vamos brincar um pouco com o objeto criado:
 Qual o nome completo da pessoa? (Use a instrução para responder e comentários
 inline ao lado da instrução para mostrar qual foi a resposta retornada)
 */
-nomeCompleto();
-//'Olá! Meu nome é Wollace Rocha!'
+nomeCompleto(); //'Olá! Meu nome é Wollace Rocha!'
 
 /*
 Qual a idade da pessoa? (Use a instrução para responder e comentários
 inline ao lado da instrução para mostrar qual foi a resposta retornada)
 */
-mostrarIdade();
-//'Olá, eu tenho 21 anos!'
+mostrarIdade(); //'Olá, eu tenho 21 anos!'
 
 /*
 Qual o peso da pessoa? (Use a instrução para responder e comentários
 inline ao lado da instrução para mostrar qual foi a resposta retornada)
 */
-mostrarPeso();
-//'Eu peso 60Kg.'
+mostrarPeso(); //'Eu peso 60Kg.'
 
 /*
 Qual a altura da pessoa? (Use a instrução para responder e comentários
 inline ao lado da instrução para mostrar qual foi a resposta retornada)
 */
-mostrarAltura();
-//'Minha altura é 1.75m'
+mostrarAltura(); //'Minha altura é 1.75m'
 
 /*
 Faça a `pessoa` fazer 3 aniversários.
@@ -133,8 +129,7 @@ Quantos anos a `pessoa` tem agora? (Use a instrução para responder e
 comentários inline ao lado da instrução para mostrar qual foi a resposta
 retornada)
 */
-pessoa;
-//24
+pessoa; //24
 
 /*
 Agora, faça a `pessoa` caminhar alguns metros, invocando o método `andar` 3x,
@@ -148,8 +143,7 @@ pessoa.andar(5);
 A pessoa ainda está andando? (Use a instrução para responder e comentários
 inline ao lado da instrução para mostrar qual foi a resposta retornada)
 */
-pessoa.andando;
-//false
+pessoa.andando; //true
 
 /*
 Se a pessoa ainda está andando, faça-a parar.
@@ -160,15 +154,13 @@ pessoa.parar();
 E agora: a pessoa ainda está andando? (Use uma instrução para responder e
 comentários inline ao lado da instrução para mostrar a resposta retornada)
 */
-pessoa.andando;
-//false
+pessoa.andando; //false
 
 /*
 Quantos metros a pessoa andou? (Use uma instrução para responder e comentários
 inline ao lado da instrução para mostrar a resposta retornada)
 */
-pessoa.caminhouQuantosMetros;
-//10
+pessoa.caminhouQuantosMetros; //10
 
 /*
 Agora vamos deixar a brincadeira um pouco mais divertida! :D

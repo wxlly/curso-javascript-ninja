@@ -33,7 +33,9 @@ Adicione um método ao objeto `pessoa` chamado `fazerAniversario`. O método dev
 alterar o valor da propriedade `idade` dessa pessoa, somando `1` a cada vez que
 for chamado.
 */
-pessoa.fazerAniversario = function() { return pessoa.idade++; };
+pessoa.fazerAniversario = function() { 
+  return pessoa.idade++; 
+};
 
 /*
 Adicione um método ao objeto `pessoa` chamado `andar`, que terá as seguintes
@@ -45,37 +47,50 @@ valor dessa propriedade a quantidade passada por parâmetro;
 - Ele deverá modificar o valor da propriedade `andando` para o valor
 booleano que representa "verdadeiro";
 */
-pessoa.andar = function(x) { var x; return pessoa.caminhouQuantosMetros += x; };
+pessoa.andar = function(x) { 
+  return pessoa.caminhouQuantosMetros += x; 
+  pessoa.andando = true; 
+};
 
 /*
 Adicione um método ao objeto `pessoa` chamado `parar`, que irá modificar o valor
 da propriedade `andando` para o valor booleano que representa "falso".
 */
-pessoa.parar = function() { return pessoa.andando = false; };
+pessoa.parar = function() { 
+  return pessoa.andando = false; 
+};
 
 /*
 Crie um método chamado `nomeCompleto`, que retorne a frase:
 - "Olá! Meu nome é [NOME] [SOBRENOME]!"
 */
-var nomeCompleto = function() { var nome = 'Wollace'; var sobrenome = 'Rocha'; return 'Olá! Meu nome é '+nome +' ' +sobrenome +'!'; };
+var nomeCompleto = function() { 
+  return 'Olá! Meu nome é '+pessoa.nome +' ' +pessoa.sobrenome +'!'; 
+};
 
 /*
 Crie um método chamado `mostrarIdade`, que retorne a frase:
 - "Olá, eu tenho [IDADE] anos!"
 */
-var mostrarIdade = function() { var idade = 21; return 'Olá, eu tenho ' +idade +' ' +'anos!'; } ;
+var mostrarIdade = function() { 
+  return 'Olá, eu tenho ' +pessoa.idade +' ' +'anos!'; 
+};
 
 /*
 Crie um método chamado `mostrarPeso`, que retorne a frase:
 - "Eu peso [PESO]Kg."
 */
-var mostrarPeso = function() { var peso = 60; return 'Eu peso ' +peso +'Kg.'; };
+var mostrarPeso = function() { 
+  return 'Eu peso ' +pessoa.peso +'Kg.'; 
+};
 
 /*
 Crie um método chamado `mostrarAltura` que retorne a frase:
 - "Minha altura é [ALTURA]m."
 */
-var mostrarAltura = function() { var altura = 1.75; return 'Minha altura é ' +altura +'m'; };
+var mostrarAltura = function() { 
+  return 'Minha altura é ' +pessoa.altura +'m'; 
+};
 
 /*
 Agora vamos brincar um pouco com o objeto criado:

@@ -186,6 +186,8 @@ pessoa.apresentacao = function() {
 
 // Agora, apresente-se ;)
 
+//metodo 1 -
+
 pessoa.nomeCompleto = pessoa.nome + ' ' + pessoa.sobrenome;
 
 pessoa.apresentacao = function() {
@@ -219,4 +221,30 @@ pessoa.apresentacao = function() {
 		}
 	}
 };
+
+//metodo 2 -
+
+pessoa.nomeCompleto = pessoa.nome + ' ' + pessoa.sobrenome;
+
+pessoa.apresentacao = function() {
+
+	var sexoPessoa = 'a';
+	var idadePessoa = 'anos';
+	var metrosCaminhados = 'metros';
+
+	if ( pessoa.sexo == 'Masculino' ) {
+		sexoPessoa = 'o';
+	}
+
+	if ( pessoa.idade == 1 ) {
+		idadePessoa = 'ano';
+	}
+
+	if ( pessoa.caminhouQuantosMetros == 1 ) {
+		metrosCaminhados = 'metro';
+	}
+
+	return 'Olá, eu sou ' + sexoPessoa + ' ' + pessoa.nomeCompleto + ', tenho ' + pessoa.idade + ' ' + idadePessoa + ', ' + pessoa.altura + 'm, meu peso é ' + pessoa.peso + ' e, só hoje, eu já caminhei ' + pessoa.caminhouQuantosMetros + ' ' + metrosCaminhados + '!'
+};
+
 ```

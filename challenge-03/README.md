@@ -179,8 +179,44 @@ deve conter no retorno da frase acima é "metro" no lugar de "metros".
 método), que será concatenada com a frase de retorno, mostrando a resposta
 correta, de acordo com os dados inseridos no objeto.
 */
-?
+pessoa.apresentacao = function() {
+	var nomeCompleto = pessoa.nome + ' ' + pessoa.sobrenome;
+	return 'Olá, eu sou ' +nomeCompleto +', tenho ' +pessoa.idade +' anos, ' +pessoa.altura +'m, meu peso é ' +pessoa.peso +'kg e, só hoje eu já caminhei ' +pessoa.caminhouQuantosMetros +' metros!'
+}
 
 // Agora, apresente-se ;)
-?
+
+pessoa.nomeCompleto = pessoa.nome + ' ' + pessoa.sobrenome;
+
+pessoa.apresentacao = function() {
+	if ( pessoa.sexo == 'Masculino' ) {
+		if ( pessoa.idade == 1 && pessoa.caminhouQuantosMetros == 1 ) {
+			return 'Olá, eu sou o ' +pessoa.nomeCompleto +', tenho ' +pessoa.idade +' ano, ' +pessoa.altura +'m, meu peso é ' +pessoa.peso +' e, só hoje, eu já caminhei ' +pessoa.caminhouQuantosMetros +' metro.'
+
+		} else if ( pessoa.idade > 1 && pessoa.caminhouQuantosMetros == 1 ) {
+			return 'Olá, eu sou o ' +pessoa.nomeCompleto +', tenho ' +pessoa.idade +' anos ' +pessoa.altura +'m, meu peso é ' +pessoa.peso +' e, só hoje, eu já caminhei ' +pessoa.caminhouQuantosMetros +' metro.'
+
+		} else if ( pessoa.idade == 1 && pessoa.caminhouQuantosMetros > 1 ) {
+			return 'Olá, eu sou o ' +pessoa.nomeCompleto +', tenho ' +pessoa.idade +' ano, ' +pessoa.altura +'m, meu peso é ' +pessoa.peso +' e, só hoje, eu já caminhei ' +pessoa.caminhouQuantosMetros +' metros.'
+
+		} else {
+			return 'Olá, eu sou o ' +pessoa.nomeCompleto +', tenho ' +pessoa.idade +' anos, ' +pessoa.altura +'m, meu peso é ' +pessoa.peso +' e, só hoje, eu já caminhei ' +pessoa.caminhouQuantosMetros +' metros.'
+		}
+
+	} else {
+		if ( pessoa.idade == 1 && pessoa.caminhouQuantosMetros == 1 ) {
+			return 'Olá, eu sou a ' +pessoa.nomeCompleto +', tenho ' +pessoa.idade +' ano, ' +pessoa.altura +'m, meu peso é ' +pessoa.peso +' e, só hoje, eu já caminhei ' +pessoa.caminhouQuantosMetros +' metro.'
+
+		} else if ( pessoa.idade > 1 && pessoa.caminhouQuantosMetros == 1 ) {
+			return 'Olá, eu sou a ' +pessoa.nomeCompleto +', tenho ' +pessoa.idade +' anos, ' +pessoa.altura +'m, meu peso é ' +pessoa.peso +' e, só hoje, eu já caminhei ' +pessoa.caminhouQuantosMetros +' metro.'
+
+		} else if ( pessoa.idade == 1 && pessoa.caminhouQuantosMetros > 1 ) {
+			return 'Olá, eu sou a ' +pessoa.nomeCompleto +', tenho ' +pessoa.idade +' ano, ' +pessoa.altura +'m, meu peso é ' +pessoa.peso +' e, só hoje, eu já caminhei ' +pessoa.caminhouQuantosMetros +' metros.'
+
+		} else {
+			return 'Olá, eu sou a ' +pessoa.nomeCompleto +', tenho ' +pessoa.idade +' anos, ' +pessoa.altura +'m, meu peso é ' +pessoa.peso +' e, só hoje, eu já caminhei ' +pessoa.caminhouQuantosMetros +' metros.'
+
+		}
+	}
+};
 ```

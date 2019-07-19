@@ -159,16 +159,14 @@ carro.adicionaPessoas(2); //Já temos 2 pessoas no carro! Só cabe mais 3 pessoa
 carro.adicionaPessoas(4); //Já temos 6 pessoas no carro! O carro já está lotado!
 
 // Faça o carro encher.
-carro.adicionaPessoas(5); //Já temos 5 pessoas no carro! O carr ojá está lotado!
+carro.adicionaPessoas(5); //Já temos 5 pessoas no carro! O carro já está lotado!
 
 // Tire 4 pessoas do carro.
-carro.quantidadePessoas = function(x) {
-  return carro.quantidadedePessoas -=x;
-}
+carro.adicionaPessoas(5); //Já temos 1 pessoa no carro! Só cabe mais 4 pessoas!
 
 // Adicione 10 pessoas no carro.
-?
+carro.adicionaPessoas(10); //Já temos 11 pessoas no carro! O carro já está lotado!
 
 // Quantas pessoas temos no carro?
-?
-```
+//11
+``

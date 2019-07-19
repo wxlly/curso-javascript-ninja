@@ -118,13 +118,15 @@ citado acima, no lugar de "pessoas".
 
 */
 carro.adicionaPessoas = function(x) {
-  carro.quantidadadePessoas += x;
-  var assentosLivres = 5 - carro.quantidadadePessoas;
-  var naoPlural1 = carro.quantidadadePessoas == 4 ? 'pessoa' : 'pessoas';
-  var naoPlural2 = assentosLivres == 4 ? 'pessoa' : 'pessoas';
-  var txt = carro.quantidadadePessoas >= 5 ? 'O carro já está lotado!' : 'Só cabe mais ' + assentosLivres + ' ' + naoPlural1 + '!';
+  var totalPessoas = carro.quantidadadePessoas += x;
+  var assentosLivres = carro.assentos - totalPessoas;
 
-  return 'Já temos ' + carro.quantidadadePessoas + ' ' + naoPlural2 + ' ' + 'no carro! ' + txt;
+  var plurarOuNao1 = totalPessoas == 4 ? 'pessoa' : 'pessoas';
+  var plurarOuNao2 = assentosLivres == 4 ? 'pessoa' : 'pessoas';
+
+  var texto = carro.quantidadadePessoas >= 5 ? 'O carro já está lotado!' : 'Só cabe mais ' + assentosLivres + ' ' + plurarOuNao1 + '!';
+
+  return 'Já temos ' + totalPessoas + ' ' + plurarOuNao2 + ' ' + 'no carro! ' + texto;
 }
 
 /*
